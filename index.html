@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Essam - Portfolio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Google Fonts (Cairo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background-color: #f8f9fa; color: #333; }
+        .hero-section { background: linear-gradient(135deg, #0d6efd, #0dcaf0); color: white; padding: 100px 0; }
+        .profile-img { width: 180px; height: 180px; object-fit: cover; border: 5px solid white; }
+        .section-title { position: relative; margin-bottom: 50px; font-weight: 700; }
+        .section-title::after { content: ''; position: absolute; bottom: -10px; right: 50%; transform: translateX(50%); width: 60px; height: 3px; background-color: #0d6efd; }
+        .card { border: none; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        footer { background-color: #212529; color: white; padding: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mohamed Essam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">نبذة عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">مشاريعي</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معي</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <img src="https://i.postimg.cc/7Cvf6Pmp/image.jpg" alt="Mohamed Essam" class="rounded-circle profile-img shadow mb-4">
+            <h1 class="display-4 fw-bold">Mohamed Essam Soliman Hasan</h1>
+            <p class="lead mt-3">طالب نظم معلومات إدارية | مطور واجهات وباحث عن التميز البرمجي</p>
+            <div class="mt-4">
+                <a href="#projects" class="btn btn-light btn-lg px-4 me-2 fw-bold text-primary">تصفح أعمالي</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-4">تواصل معي</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">نبذة عني</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="fw-bold text-primary mb-3">مرحباً بك في سيرتي الذاتية الرقمية</h3>
+                    <p class="text-muted lh-lg">
+                        أنا محمد عصام سليمان حسن، أدرس نظم المعلومات الإدارية في معهد الدلتا العالي لنظم المعلومات والمحاسبة بالمنصورة. شغوف بتطوير الويب، وتحليل وتصميم النظم البرمجية، وتقديم حلول تقنية مبتكرة ومنظمة.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm p-4">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3"><strong><i class="fa-solid fa-user text-primary ms-2"></i> الاسم:</strong> محمد عصام سليمان حسن</li>
+                            <li class="mb-3"><strong><i class="fa-solid fa-graduation-cap text-primary ms-2"></i> المعهد:</strong> معهد الدلتا العالي بالمنصورة</li>
+                            <li class="mb-0"><strong><i class="fa-solid fa-envelope text-primary ms-2"></i> البريد:</strong> toxichero025@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center section-title">مهاراتي التقنية</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code fa-3x text-primary mb-3"></i>
+                            <h4 class="fw-bold">Frontend Development</h4>
+                            <p class="text-muted">HTML, CSS, JavaScript, Bootstrap 5 لتصميم واجهات عصرية ومتجاوبة.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-database fa-3x text-primary mb-3"></i>
+                            <h4 class="fw-bold">System Analysis</h4>
+                            <p class="text-muted">تحليل وتصميم النظم، ورسم مخططات تدفق البيانات و Use Case.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <div class="card-body">
+                            <i class="fa-solid fa-laptop-code fa-3x text-primary mb-3"></i>
+                            <h4 class="fw-bold">Tools & Git</h4>
+                            <p class="text-muted">التعامل مع أدوات التطوير، وإدارة ورفع المشاريع عبر GitHub.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">سابقة الأعمال والمشاريع</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h4 class="fw-bold text-primary">نظام إدارة صيدلية</h4>
+                            <p class="text-muted mt-2">تصميم متكامل لنظام معلومات إداري، يشمل تحليل النظم ومخططات الـ Use Case باستخدام Draw.io.</p>
+                            <span class="badge bg-primary">تحليل وتصميم نُظم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة &copy; 2026 - Mohamed Essam</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
